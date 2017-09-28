@@ -48,7 +48,14 @@ table {
 }
 
 /***/
-
+/* Questions
+* How do I manage the width of .hero-hd?
+* How do you know which/how many classes you should be using?
+* How should you order the CSS?
+* How do you use "::about"?
+*How do I get the purple line inbetween hero-hd and hero-bd
+* How do I add a background image?
+*/
 html {
     font-size: 16px;
 }
@@ -98,8 +105,8 @@ html {
     font-size: 0.8rem;
     text-decoration: none;
     color: #424242;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .navigation li a:hover {
@@ -115,11 +122,41 @@ html {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.05em;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .btn:hover {
     color: #ffffff;
     background-color: #4a148c;
+}
+
+.hero{
+  background-image: url('conversation-ai-hero.png');
+  background-size: cover;
+}
+
+.hero-content {
+  padding: 114px 77px 0;
+  box-sizing: border-box;
+  width: 60%;
+  min-width: 544px;
+}
+
+.hero-hd {
+  margin: 0px 0px 36px 0px;
+}
+
+.hdg_1 {
+  font-family: 'Roboto Mono', monospace;
+  color: #6200ea;
+  line-height: 64px;
+  font-weight: 300;
+  font-size: 2.85rem;
+}
+
+.hero-bd{
+  font-family: 'Roboto', sans-serif;
+  line-height: 26px;
+  letter-spacing: .044em;
 }
