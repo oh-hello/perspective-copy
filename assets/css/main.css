@@ -54,13 +54,16 @@ html {
 
 /* Layout */
 .wrapper {
-    padding: 0 30px;
+    padding: 12px 77px;
 }
 
 
 /* Masthead */
 .masthead {
     padding: 24px 0;
+    position: fixed;
+    background-color: #FFF;
+    width: 100%;
 }
 
 .masthead-container {
@@ -85,16 +88,25 @@ html {
 
 /* Headings */
 .hdg {
-  font-family: 'Roboto Mono', monospace;
-  color: #6200ea;
-  font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    color: #6200ea;
+    font-weight: 300;
 }
 
 .hdg_1 {
-  line-height: 64px;
-  font-size: 2.85rem;
-  position: relative;
-  padding-bottom: 26px;
+    line-height: 64px;
+    font-size: 2.85rem;
+    position: relative;
+    padding-bottom: 26px;
+}
+
+.hdg_3 {
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 300;
+    margin: 0 0 40px;
 }
 
 /* Navigation */
@@ -135,6 +147,7 @@ html {
     letter-spacing: 0.05em;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -143,38 +156,49 @@ html {
 }
 
 /* Hero */
-.hero{
-  background-image: url('../img/conversation-ai-hero.png');
-  background-size: 62%;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+.hero_main{
+    background-image: url('../img/conversation-ai-hero.png');
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .hero-content {
-  padding: 114px 0 0;
-  box-sizing: border-box;
+    padding: 114px 0 0;
+    box-sizing: border-box;
 }
 
 .hero-hd {
-  margin: 0px 0px 36px 0px;
+    margin: 0px 0px 36px 0px;
 }
 
 .hero-hd .hdg:after {
-  content: '';
-  width: 48px;
-  height: 2px;
-  background: #6200EA;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+    content: '';
+    width: 48px;
+    height: 2px;
+    background: #6200EA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .hero-bd{
-  font-family: 'Roboto', sans-serif;
-  line-height: 26px;
-  letter-spacing: .044em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    letter-spacing: .044em;
 }
 
+.hero_two {
+    background-color: #6200EA;
+    height: 100vh;
+    max-height: 960px;
+    min-height: 500px;
+}
+.description {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+}
 /* Media Breakpoints */
 @media (min-width: 1172px) {
   .wrapper {
@@ -187,4 +211,11 @@ html {
     width: 60%;
     min-width: 544px;
   }
+}
+
+@media (min-width: 1280px){
+    .hdg_3{
+        font-size: 28px;
+        line-height: 42px;
+    }
 }
